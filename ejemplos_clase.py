@@ -24,12 +24,12 @@ import mplcursors  # [Opcional cursores]
 def line_plot():
     # Demostración de uso de line plot con una sola variable
     # Generaremos la función y=X^2 (x al cuadradro)
-    # pero solo graficaremos los valores de "Y" indepedientes de "X"
+    # pero solo graficaremos los valores de "Y" depedientes de "X"
     x = range(-10, 11, 2)
     y = [i**2 for i in x]
 
     fig = plt.figure()
-    fig.suptitle('Graficar "Y" independiente de "X"', fontsize=14)
+    fig.suptitle('Graficar "Y" dependiente de "X"', fontsize=14)
     ax = fig.add_subplot()
 
     ax.plot(y, c='darkred', marker='^', ms=10, label='y=x**2')
